@@ -1,0 +1,91 @@
+h1 {
+    
+    color: black;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.calculatorMain{
+    display: grid;
+    background-color: rgb(92, 75, 75);
+    height: 60vh;
+    width: 25%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+.displayScreenMain{
+    width: 90%;
+    /* margin-top: 20px; */
+}
+
+.numberAndOperator {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* background-color: rgb(207, 203, 203); */
+
+}
+.number{
+    height: 50px;
+    background-color:  rgb(105, 105, 110);
+    color: white;
+    border: 2px outset rgb(220, 180, 140);
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+       
+}
+.operator {
+    background-color:  rgb(242, 245, 92);
+    height: 50px;
+    border: 1px inset rgb(220, 180, 140);
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.operator:hover {
+    background-color: rgb(154, 156, 34);
+    border: 3px dashed black; 
+
+}
+.number:hover {
+    background-color: rgb(50, 50, 50);
+    border: 3px dashed orange;
+}
+button {
+    border-radius: 20%;
+}
+.lastRow { 
+   
+    width: 90%;
+    margin-top: -18px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2px;
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr
+}
+
+
+#displayScreen {
+    border: 1px inset rgb(220, 180, 140);
+    font-size: larger;
+    background-color: rgb(195, 247, 118);
+    font-family: 'Orbitron', monospace;
+    display: block;
+    text-align: right;
+    /* margin-left: auto;
+    margin-right: auto; */
+    border: 2px solid rgb(207, 203, 203);
+    resize: none;
+
+}

@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" content="initial-scale=1.0", width="device-width">
-        <title>Calculater</title>
-        <link rel="stylesheet" href="project.css">
-        <script src="project.js"></script>
+        <title>Calculator</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+        <link rel="stylesheet" href="project.css" />
+        <script src="project.js" defer></script>       
     </head>
-    
-</html> 
+    <body>
+        <header><h1>Basic Calculator</h1></header>
+        <main>
+            
+            <div class="calculatorMain">
+            
+                <div class="displayScreenMain"><textarea id="displayScreen" readonly rows="3" ></textarea></div>
+
+                <div class="numberAndOperator">
+
+                    <button class="number" id="seven">  7   </button>
+                    <button class="number" id="eight">  8   </button>
+                    <button class="number" id="nine">  9   </button>
+                    <button class="operator" id="backspace">DEL</button>
+
+                    
+                    
+                    <button class="number" id="four">  4   </button>
+                    <button class="number" id="five">  5   </button>
+                    <button class="number" id="six">  6   </button>
+                    <button class="operator" id="plus">  +   </button>
+                    
+                    
+                    <button class="number" id="one">  1   </button>
+                    <button class="number" id="two">  2   </button>
+                    <button class="number" id="three">  3   </button>
+                    <button class="operator" id="minus">  -   </button>
+                    
+                    
+                    
+                    
+                    <button class="number" id="zero">  0   </button>
+                    <button class="number" id="2zeros">  00   </button>
+                    <button class="number" id="dot">  .   </button>
+                    <button class="operator" id="times">  x   </button>
+                </div>
+
+                <div class="lastRow">
+                    <button class="operator" id="clear">C</button>
+                    <button class="operator" id="equal">  =   </button>
+                    <button class="operator" id="divide">  ÷   </button>
+                </div>
+ 
+
+            </div>
+        </main>
+    </body>
+</html>
