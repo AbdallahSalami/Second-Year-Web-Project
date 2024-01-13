@@ -1,0 +1,45 @@
+.mainAll{
+    margin: auto;
+    width: 50%;
+}
+.mainNumbers {
+    width: 75%;
+    
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.mainOperations {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Three columns with equal width */
+    text-align: center;
+    width: 25%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.number {
+    background-color: gray;
+}
+.operation {
+    background-color:red;
+}
+.mainScreen{
+    display: flex;
+    height: 100px;
+    background-color: aqua;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+.numbersAndOperations{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
