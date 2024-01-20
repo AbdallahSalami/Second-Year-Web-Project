@@ -1,0 +1,16 @@
+/* Styles for About Us page */
+.about-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-content h1 {
+    color: #718355;
+    font-size: 2em;
+}
+
+.about-content p {
+    color: #718355;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}

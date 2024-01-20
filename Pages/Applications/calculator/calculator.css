@@ -1,0 +1,85 @@
+.calculatorMain {
+  display: grid;
+  background: linear-gradient(to right, #EFEFEF, #D4D4D4);
+  height: 60vh;
+  width: 25%;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.displayScreenMain {
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  background: linear-gradient(to right, #D4D4D4, #EFEFEF);
+  border: 2px solid #718355;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.numberAndOperator {
+  width: 90%;
+  margin: auto;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.number,
+.operator {
+  height: 50px;
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.number {
+  background: linear-gradient(to right, #3A9D9D, #4DB3B3);
+  color: white;
+}
+
+.operator {
+  background: linear-gradient(to right, #8F6B6B, #A88787);
+  color: white;
+}
+
+.operator:hover {
+  background: linear-gradient(to right, #A88787, #C0A1A1);
+}
+
+.number:hover {
+  background: linear-gradient(to right, #4DB3B3, #66C2C2);
+  color: white;
+}
+
+.lastRow {
+  width: 90%;
+  margin: -18px auto 0 auto;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#displayScreen {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: larger;
+  background: linear-gradient(to right, #D4D4D4, #EFEFEF);
+  font-family: "Orbitron", monospace;
+  text-align: right;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
