@@ -5,19 +5,38 @@ body {
     background-color: #E9f5DB;
 }
 
+
 header {
-    background-color: #718355;  
+    background-color: #718355;
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
+.logo {
+    vertical-align: middle;
+    
+    display: inline;
+}
+#logo {
+    color: black;
+    margin-right:500px;
+    text-decoration: none;
+    font-size: larger;
+    
+}
 .navBarTable {
     width: 100%;
+    
+    
 }
 
 .navBar {
     display: flex;
+    
     justify-content: end;
     padding: 10px;
+    
 }
 
 .navBar a {
@@ -45,4 +64,7 @@ footer {
 
 p {
     margin: 0;
+    color: #718355;
+    
 }
+

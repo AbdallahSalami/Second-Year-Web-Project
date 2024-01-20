@@ -7,14 +7,14 @@ var buttonOne = document.getElementById('one');
 buttonOne.addEventListener('click', function() {
     number1 += "1";
     document.getElementById('displayScreen').innerHTML= number1;
-  if( document.getElementById('main').classList.contains('light'))  document.getElementById('main').classList.remove("light");
-  else  document.getElementById('main').classList.add('light')
+    
 
 });
 var buttonTwo = document.getElementById('two');
 buttonTwo.addEventListener('click', function() {
     number1 += "2";
-    document.getElementById('displayScreen').innerHTML= number1
+    document.getElementById('displayScreen').innerHTML= number1;
+    
 });
 var buttonThree = document.getElementById('three');
 buttonThree.addEventListener('click', function() {
@@ -104,27 +104,15 @@ function times(){
         }
     }
     else if (operator === "*" ) {
-        if (number1 !== "" && dotted === false){
+        if (number1 !== "" ){
             number1 = parseFloat(number1);
             number2 *= number1;            
             number1 = "";
             dotted = false;
             operator = "*";
-        }else if (number1 !== "" && dotted === true){
-            number1 = parseFloat(number1);
-            number2 *= number1;
-            number1 = "";
-            dotted = false;
-            operator = "*";
         }
     }else if (operator === "+") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 += number1;
-            number1 = "";
-            dotted = false;
-            operator = "*";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== "" ){
             number1 = parseFloat(number1);
             number2 += number1;
             number1 = "";
@@ -132,13 +120,7 @@ function times(){
             operator = "*";
         }
     }else if (operator === "-") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 -= number1;
-            number1 = "";
-            dotted = false;
-            operator = "*";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 -= number1;
             number1 = "";
@@ -146,13 +128,7 @@ function times(){
             operator = "*";
         }
     }else if (operator === "/") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 /= number1;
-            number1 = "";
-            dotted = false;
-            operator = "*";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 /= number1;
             number1 = "";
@@ -187,27 +163,15 @@ function minus(){
         }
     }
     else if (operator === "*" ) {
-        if (number1 !== "" && dotted === false){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 *= number1;            
             number1 = "";
             dotted = false;
             operator = "-";
-        }else if (number1 !== "" && dotted === true){
-            number1 = parseFloat(number1);
-            number2 *= number1;
-            number1 = "";
-            dotted = false;
-            operator = "-";
         }
     }else if (operator === "+") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 += number1;
-            number1 = "";
-            dotted = false;
-            operator = "-";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 += number1;
             number1 = "";
@@ -215,13 +179,7 @@ function minus(){
             operator = "-";
         }
     }else if (operator === "-") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 -= number1;
-            number1 = "";
-            dotted = false;
-            operator = "-";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 -= number1;
             number1 = "";
@@ -229,13 +187,7 @@ function minus(){
             operator = "-";
         }
     }else if (operator === "/") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 /= number1;
-            number1 = "";
-            dotted = false;
-            operator = "-";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 /= number1;
             number1 = "";
@@ -269,27 +221,15 @@ function plus(){
         }
     }
     else if (operator === "*" ) {
-        if (number1 !== "" && dotted === false){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 *= number1;            
             number1 = "";
             dotted = false;
             operator = "+";
-        }else if (number1 !== "" && dotted === true){
-            number1 = parseFloat(number1);
-            number2 *= number1;
-            number1 = "";
-            dotted = false;
-            operator = "+";
         }
     }else if (operator === "+") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 = parseFloat(number2) + parseFloat(number1);
-            number1 = "";
-            dotted = false;
-            operator = "+";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 = parseFloat(number2) + parseFloat(number1);
             number1 = "";
@@ -297,13 +237,7 @@ function plus(){
             operator = "+";
         }
     }else if (operator === "-") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 -= number1;
-            number1 = "";
-            dotted = false;
-            operator = "+";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 -= number1;
             number1 = "";
@@ -311,13 +245,7 @@ function plus(){
             operator = "+";
         }
     }else if (operator === "/") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 /= number1;
-            number1 = "";
-            dotted = false;
-            operator = "+";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 /= number1;
             number1 = "";
@@ -351,27 +279,15 @@ function divide(){
         }
     }
     else if (operator === "*" ) {
-        if (number1 !== "" && dotted === false){
+        if (number1 !== "" ){
             number1 = parseFloat(number1);
             number2 *= number1;            
             number1 = "";
             dotted = false;
             operator = "/";
-        }else if (number1 !== "" && dotted === true){
-            number1 = parseFloat(number1);
-            number2 *= number1;
-            number1 = "";
-            dotted = false;
-            operator = "/";
         }
     }else if (operator === "+") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 += number1;
-            number1 = "";
-            dotted = false;
-            operator = "/";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 += number1;
             number1 = "";
@@ -379,13 +295,7 @@ function divide(){
             operator = "/";
         }
     }else if (operator === "-") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 -= number1;
-            number1 = "";
-            dotted = false;
-            operator = "/";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 -= number1;
             number1 = "";
@@ -393,13 +303,7 @@ function divide(){
             operator = "/";
         }
     }else if (operator === "/") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 /= number1;
-            number1 = "";
-            dotted = false;
-            operator = "/";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 /= number1;
             number1 = "";
@@ -432,28 +336,15 @@ function equal(){
         }
     }
     else if (operator === "*" ) {
-        if (number1 !== "" && dotted === false){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
-            number2 *= number1;
-          
-            number1 = "";
-            dotted = false;
-            operator = "=";
-        }else if (number1 !== "" && dotted === true){
-            number1 = parseFloat(number1);
-            number2 *= number1;
+            number2 *= number1;      
             number1 = "";
             dotted = false;
             operator = "=";
         }
     }else if (operator === "+") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 = parseFloat(number2) + parseFloat(number1);
-            number1 = "";
-            dotted = false;
-            operator = "=";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 = parseFloat(number2) + parseFloat(number1);
             number1 = "";
@@ -461,13 +352,7 @@ function equal(){
             operator = "=";
         }
     }else if (operator === "-") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 -= number1;
-            number1 = "";
-            dotted = false;
-            operator = "=";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 -= number1;
             number1 = "";
@@ -475,13 +360,7 @@ function equal(){
             operator = "=";
         }
     }else if (operator === "/") {
-        if (number1 !== "" && dotted === false){
-            number1 = parseFloat(number1);
-            number2 /= number1;
-            number1 = "";
-            dotted = false;
-            operator = "=";
-        }else if (number1 !== "" && dotted === true){
+        if (number1 !== ""){
             number1 = parseFloat(number1);
             number2 /= number1;
             number1 = "";
