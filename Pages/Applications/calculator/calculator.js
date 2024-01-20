@@ -6,7 +6,10 @@ var operator = "";
 var buttonOne = document.getElementById('one');
 buttonOne.addEventListener('click', function() {
     number1 += "1";
-    document.getElementById('displayScreen').innerHTML= number1
+    document.getElementById('displayScreen').innerHTML= number1;
+  if( document.getElementById('main').classList.contains('light'))  document.getElementById('main').classList.remove("light");
+  else  document.getElementById('main').classList.add('light')
+
 });
 var buttonTwo = document.getElementById('two');
 buttonTwo.addEventListener('click', function() {
